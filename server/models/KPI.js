@@ -77,4 +77,6 @@ const KPISchema = new Schema({
 	toJSON: { getters: true }
 });
 
-export const KPI = mongoose.model('KPI', KPISchema);
+const KPI = mongoose.model('KPI', KPISchema);
+
+export default KPI;

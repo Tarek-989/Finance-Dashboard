@@ -1,7 +1,7 @@
 import express from 'express';
 import KPI from '../models/KPI.js';
 
-export const router = express.Router();
+const router = express.Router();
 
 router.get('/kpis', async (rec, res) => {
 	try {
@@ -11,3 +11,5 @@ router.get('/kpis', async (rec, res) => {
 		res.status(404).json({ message: error.message });
 	}
 });
+
+export default router;
