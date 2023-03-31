@@ -32,7 +32,9 @@ mongoose
 	})
 	.then(async () => {
 		app.listen(PORT, () => console.log(`server Port: ${PORT}`));
-		await mongoose.connection.db.dropDatabase();
-		KPI.insertMany(kpis);
+
+		//! ADD DATA ONE TIME ONLY  
+		// await mongoose.connection.db.dropDatabase();
+		// KPI.insertMany(kpis);
 	})
 	.catch((error) => console.log(`server error: ${error}`));
