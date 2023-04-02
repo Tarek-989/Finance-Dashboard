@@ -37,7 +37,7 @@ mongoose
 		useUnifiedTopology: true,
 	})
 	.then(async () => {
-		app.listen(PORT, () => console.log(`server Port: ${PORT}`));
+		app.listen(PORT, () => console.log(`server port: ${PORT}`));
 
 		//! ADD DATA ONE TIME ONLY  
 		// await mongoose.connection.db.dropDatabase();
